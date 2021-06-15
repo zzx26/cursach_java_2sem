@@ -1,0 +1,3 @@
+city: st_petersburg; country: russia; is capital: false; over million population: true
+city: newcastle; country: uk; is capital: false; over million population: false
+city: phoenix; country: us; is capital: false; over million population: true
