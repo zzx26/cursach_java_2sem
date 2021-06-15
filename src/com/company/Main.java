@@ -86,6 +86,8 @@ public class Main {
         ArrayList<City> set_3 = new ArrayList<>();
         String path = "Cities.txt";
         String output_path = "Output.txt";
+        String outpath_1 = "Out_set_1.txt";
+        String outpath_2 = "Out_set_2.txt";
 
         System.out.println("Importing data to sets from file");
         FileReader read_file = new FileReader(path);
@@ -190,6 +192,18 @@ public class Main {
                         writer.write(i.write_city() + "\n");
                     }
                     writer.close();
+
+                    BufferedWriter writer_1 = new BufferedWriter(new FileWriter(outpath_1));
+                    for (City i: set_1){
+                        writer_1.write(i.write_city() + "\n");
+                    }
+                    writer_1.close();
+
+                    BufferedWriter writer_2 = new BufferedWriter(new FileWriter(outpath_2));
+                    for (City i: set_2){
+                        writer_2.write(i.write_city() + "\n");
+                    }
+                    writer_2.close();
                     break;
                 }
                 case 7:
